@@ -20,7 +20,7 @@ class Main extends PluginBase {
 
         $this->db = new Config($this->getDataFolder() . "config.yml" . Config::YAML);
 
-       
+
 
         $this->getLogger()->info("Plugin activé !");
         if(self::config()->getNested("WebHook.Url") == ""){
